@@ -65,7 +65,7 @@ services:
     ports:
       - "5433:5432"
     volumes:
-      - superstreamer_postgres_data:/var/lib/postgresql/data
+      - superstreamer_postgres_data:/var/lib/postgresql
     environment:
       - POSTGRES_INITDB_ARGS=--data-checksums
       - POSTGRES_DB=sprs

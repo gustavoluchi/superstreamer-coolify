@@ -1,5 +1,3 @@
-version: "3"
-
 volumes:
   superstreamer_redis_data:
   superstreamer_postgres_data:
@@ -65,7 +63,7 @@ services:
     restart: always
     stop_signal: SIGINT
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - superstreamer_postgres_data:/var/lib/postgresql/data
     environment:
